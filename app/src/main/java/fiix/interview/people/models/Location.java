@@ -21,9 +21,6 @@ public class Location {
     @SerializedName("coordinates")
     @Expose
     private Coordinates coordinates;
-    @SerializedName("timezone")
-    @Expose
-    private Timezone timezone;
 
     public String getStreet() {
         return street;
@@ -63,14 +60,6 @@ public class Location {
 
     public void setCoordinates(Coordinates coordinates) {
         this.coordinates = coordinates;
-    }
-
-    public Timezone getTimezone() {
-        return timezone;
-    }
-
-    public void setTimezone(Timezone timezone) {
-        this.timezone = timezone;
     }
 
 }
